@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<p><input type="text" id="nhapSao"> <input type="button" value="Display" onclick="display()"></p>
+<p><input type="text" disabled id="hienSao"></p>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function display() {
+        let star = document.getElementById("nhapSao").value;
+        for (i = 0; i < arr1.length; i++){
+            if (star == arr1[i]){
+                document.getElementById("hienSao").value = arr2[i];
+                break;
+            }else {
+                document.getElementById("hienSao").value = "nhập lại";
+            }
+        }
+    }
+</script>
+</body>
+</html>

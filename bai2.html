@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<input type="text" id="inputNum">
+<input type="button" value="Hiển thị" onclick="display()">
+<p id="view"></p>
+<script>
+    function check(num) {
+        let result = num + 1;
+        return result;
+    }
+    function display() {
+        let valueinput = parseFloat(document.getElementById("inputNum").value);
+        document.getElementById("view").innerHTML = check(valueinput);
+    }
+</script>
+</body>
+</html>
